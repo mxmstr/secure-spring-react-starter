@@ -1,0 +1,20 @@
+okta:
+  oauth2:
+    token: 00IAqkAMGmNeCHH99L8jvnWA2-8Ca5SxLqzyf8rQln
+    orgUrl: https://dev-486832.okta.com/
+    clientId: 0oap0ze7tuZcw1B5Z356
+    clientSecret: 9nGCV0VCsqTctnocYNiFMAdBab-rNF91Y88aX3se
+    issuer: https://dev-486832.okta.com/oauth2/default
+    rolesClaim: groups
+    scope: openid
+spring:
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/demo?allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: admin
